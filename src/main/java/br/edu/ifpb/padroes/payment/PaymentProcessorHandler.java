@@ -4,6 +4,6 @@ import br.edu.ifpb.padroes.domain.Property;
 
 public interface PaymentProcessorHandler {
 
-    public abstract void process(Property property);
-
+    void process(Property property);
+    PaymentProcessorHandler setNext(PaymentProcessorHandler paymentProcessorHandler);
 }
